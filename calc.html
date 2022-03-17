@@ -1,0 +1,88 @@
+<html>
+    <head>
+    <script src = "calc.js">
+    </script>
+    </head>
+    <style>
+        body{
+            margin:auto;
+            margin-top: 120px;
+            background-color : powderblue;
+        }
+        .button{
+            text-align:center;
+            width:300px;
+            height:400px;
+            margin : auto;
+            background : black;
+            border-radius:20px;
+
+
+    
+        
+        }
+        table{
+            margin:auto;
+          
+        }
+        input{
+            
+            font-size:23px;
+            background-color: aliceblue;
+            width:45px;
+            height:45px;
+            
+    
+        }
+        #result{
+            width : 190px;
+            height : 40px;
+            margin-top:30px;
+        }
+    
+    
+        
+    </style>
+    
+    <body>
+        <div class = "button">
+
+            <input type = "text" id = "result"/>
+            <table>
+                <tr>
+                    <td><input type = "button" value = "C" onclick = "del();"></td>
+                    <td><input type = "button" value = "%" onclick = "view('%');"></td>
+                    <td><input type = "button" value = "del" onclick = "del();"></td>
+                    <td><input type = "button" value = "/" onclick = "view('/');"></td>
+                </tr>
+                    <tr>
+                        <td><input type = "button" value = "7" onclick = "view('7');"></td>
+                        <td><input type = "button" value = "8" onclick = "view('8');"></td>
+                        <td><input type = "button" value = "9" onclick = "view('9');"></td>
+                        <td><input type = "button" value = "X" onclick = "view('*');"></td>
+                    </tr>
+                    <tr>
+                        <td><input type = "button" value = "4" onclick = "view('4');"></td>
+                        <td><input type = "button" value = "5" onclick = "view('5');"></td>
+                        <td><input type = "button" value = "6" onclick = "view('6');"></td>
+                        <td><input type = "button" value = "-" onclick = "view('-');"></td>
+                    </tr>
+                    <tr>
+                        <td><input type = "button" value = "1" onclick = "view('4');"></td>
+                        <td><input type = "button" value = "2" onclick = "view('5');"></td>
+                        <td><input type = "button" value = "3" onclick = "view('6');"></td>
+                        <td><input type = "button" value = "+" onclick = "view('+');"></td>
+                    </tr>
+                    <tr>
+                        <td><input type = "button" value = "00" onclick = "view('00');"></td>
+                        <td><input type = "button" value = "0" onclick = "view('0');"></td>
+                        <td><input type = "button" value = "." onclick = "view('.');"></td>
+                        
+                        <td><input type = "button" value = "=" onclick = "calc();"></td>
+                    
+                    </tr>
+        
+            </table>
+    
+    </body>
+</html>
